@@ -1,7 +1,7 @@
 # RWDevCon-AdaptiveLayout
 
 This repo contains the project files associated with the tutorial on Adaptive
-Layout for RWDevCon 2014.
+Layout for [RWDevCon](http://www.rwdevcon.com/) 2015.
 
 The app is called __LocalWeather__, and is a really simple static weather app.
 The app appears in 4 different directories:
