@@ -11,8 +11,8 @@
 		22CBD3261A2A0E8500A8459D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBD3251A2A0E8500A8459D /* ViewController.swift */; };
 		22CBD3291A2A0E8500A8459D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD3271A2A0E8500A8459D /* Main.storyboard */; };
 		22CBD32B1A2A0E8500A8459D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD32A1A2A0E8500A8459D /* Images.xcassets */; };
-		22CBD32E1A2A0E8500A8459D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD32C1A2A0E8500A8459D /* LaunchScreen.xib */; };
 		22CBD33A1A2A0E8500A8459D /* LocalWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBD3391A2A0E8500A8459D /* LocalWeatherTests.swift */; };
+		22CBD3441A2A115E00A8459D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD3431A2A115E00A8459D /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		22CBD3251A2A0E8500A8459D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22CBD3281A2A0E8500A8459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22CBD32A1A2A0E8500A8459D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		22CBD32D1A2A0E8500A8459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		22CBD3331A2A0E8500A8459D /* LocalWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CBD3381A2A0E8500A8459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CBD3391A2A0E8500A8459D /* LocalWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherTests.swift; sourceTree = "<group>"; };
+		22CBD3431A2A115E00A8459D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 				22CBD3251A2A0E8500A8459D /* ViewController.swift */,
 				22CBD3271A2A0E8500A8459D /* Main.storyboard */,
 				22CBD32A1A2A0E8500A8459D /* Images.xcassets */,
-				22CBD32C1A2A0E8500A8459D /* LaunchScreen.xib */,
 				22CBD3211A2A0E8500A8459D /* Supporting Files */,
+				22CBD3431A2A115E00A8459D /* LaunchScreen.xib */,
 			);
 			path = LocalWeather;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CBD3291A2A0E8500A8459D /* Main.storyboard in Resources */,
-				22CBD32E1A2A0E8500A8459D /* LaunchScreen.xib in Resources */,
+				22CBD3441A2A115E00A8459D /* LaunchScreen.xib in Resources */,
 				22CBD32B1A2A0E8500A8459D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +242,6 @@
 				22CBD3281A2A0E8500A8459D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		22CBD32C1A2A0E8500A8459D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22CBD32D1A2A0E8500A8459D /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
