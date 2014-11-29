@@ -49,13 +49,46 @@
                                             <constraint firstItem="hfl-kY-DdA" firstAttribute="leading" secondItem="Q23-vY-3QB" secondAttribute="leading" id="lJ5-Gf-aok"/>
                                         </constraints>
                                     </view>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="spy-n1-agH">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Q23-vY-3QB" firstAttribute="leading" secondItem="Tj2-tI-u1h" secondAttribute="leading" id="21Q-JE-jsm"/>
-                                    <constraint firstAttribute="centerY" secondItem="Q23-vY-3QB" secondAttribute="centerY" id="2Bu-iY-HpA"/>
+                                    <constraint firstAttribute="centerY" secondItem="Q23-vY-3QB" secondAttribute="centerY" id="2Bu-iY-HpA">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" secondItem="Q23-vY-3QB" secondAttribute="trailing" id="EyR-Nn-NEj"/>
+                                    <constraint firstItem="spy-n1-agH" firstAttribute="top" secondItem="Q23-vY-3QB" secondAttribute="bottom" constant="14" id="RQX-tn-rSi">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="spy-n1-agH" firstAttribute="leading" secondItem="Tj2-tI-u1h" secondAttribute="leading" id="aWA-18-rwx"/>
+                                    <constraint firstAttribute="trailing" secondItem="spy-n1-agH" secondAttribute="trailing" id="dt1-Ig-gCf"/>
+                                    <constraint firstAttribute="bottom" secondItem="spy-n1-agH" secondAttribute="bottom" id="izT-19-887"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="spy-n1-agH"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="RQX-tn-rSi"/>
+                                        <exclude reference="aWA-18-rwx"/>
+                                        <exclude reference="dt1-Ig-gCf"/>
+                                        <exclude reference="izT-19-887"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="spy-n1-agH"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="RQX-tn-rSi"/>
+                                        <include reference="aWA-18-rwx"/>
+                                        <include reference="dt1-Ig-gCf"/>
+                                        <include reference="izT-19-887"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="BTr-eJ-TUh">
                                 <rect key="frame" x="50" y="20" width="500" height="240"/>
@@ -104,6 +137,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="spy-n1-agH" id="jNw-a2-PyO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

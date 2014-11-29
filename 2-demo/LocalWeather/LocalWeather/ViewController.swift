@@ -21,8 +21,26 @@
 */
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
-
+  
+  @IBOutlet weak var mapView: MKMapView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Configure the map to show the correct location
+    if let mapView = mapView {
+      let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 35.498333, longitude: 138.685278),
+                                        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+      mapView.setRegion(region, animated: true)
+      mapView.scrollEnabled = false
+      mapView.zoomEnabled = false
+      mapView.rotateEnabled = false
+      mapView.pitchEnabled = false
+      mapView.mapType = .Hybrid
+    }
+  }
 }
 
