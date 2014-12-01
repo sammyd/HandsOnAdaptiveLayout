@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -49,6 +50,18 @@
                                             <constraint firstItem="hfl-kY-DdA" firstAttribute="leading" secondItem="Q23-vY-3QB" secondAttribute="leading" id="lJ5-Gf-aok"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ev-vb-vZF">
+                                        <rect key="frame" x="523" y="0.0" width="77" height="42"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="climate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fsC-0z-OmQ" kind="presentation" id="STL-Xt-SUq"/>
+                                        </connections>
+                                    </button>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="spy-n1-agH">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     </mapView>
@@ -59,7 +72,9 @@
                                     <constraint firstAttribute="centerY" secondItem="Q23-vY-3QB" secondAttribute="centerY" id="2Bu-iY-HpA">
                                         <variation key="heightClass=regular-widthClass=regular" constant="75"/>
                                     </constraint>
+                                    <constraint firstItem="2ev-vb-vZF" firstAttribute="top" secondItem="Tj2-tI-u1h" secondAttribute="top" id="7vt-js-SUD"/>
                                     <constraint firstAttribute="trailing" secondItem="Q23-vY-3QB" secondAttribute="trailing" id="EyR-Nn-NEj"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ev-vb-vZF" secondAttribute="trailing" id="OdE-yb-oCn"/>
                                     <constraint firstItem="spy-n1-agH" firstAttribute="top" secondItem="Q23-vY-3QB" secondAttribute="bottom" constant="14" id="RQX-tn-rSi">
                                         <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                                     </constraint>
@@ -145,9 +160,94 @@
             </objects>
             <point key="canvasLocation" x="570" y="388.5"/>
         </scene>
+        <!--Climate View Controller-->
+        <scene sceneID="e64-mB-4iJ">
+            <objects>
+                <viewController id="fsC-0z-OmQ" customClass="ClimateViewController" customModule="LocalWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vm7-FM-RJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="lJW-YY-c2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WMf-2j-WGI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EEY-CL-OMw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart" translatesAutoresizingMaskIntoConstraints="NO" id="OhH-yq-Ugr">
+                                <rect key="frame" x="16" y="0.0" width="568" height="270"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnp-YU-Teh">
+                                <rect key="frame" x="0.0" y="270" width="600" height="330"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lake Saiko (西湖 Saiko)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-BT-yQS">
+                                        <rect key="frame" x="8" y="8" width="584" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.1507152641" green="0.35794979980000002" blue="0.53186782529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-tf-YP4">
+                                        <rect key="frame" x="8" y="51" width="584" height="270.5"/>
+                                        <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                        <string key="text">One of the Fuji Five Lakes and located in southern Yamanashi Prefecture near Mount Fuji, Japan.
+It is the fourth of the Fuji Five Lakes in terms of surface area, and second deepest, with a maximum water depth of 71.1 metres (233 ft).</string>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S4-Ug-90m">
+                                        <rect key="frame" x="511" y="280" width="81" height="42"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="dismiss">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismiss:" destination="fsC-0z-OmQ" eventType="touchUpInside" id="7M5-co-cya"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="p7R-BT-yQS" firstAttribute="leading" secondItem="Cnp-YU-Teh" secondAttribute="leadingMargin" id="6eU-qY-6oV"/>
+                                    <constraint firstItem="aYQ-tf-YP4" firstAttribute="top" secondItem="p7R-BT-yQS" secondAttribute="bottom" constant="8" id="6h3-Iw-t9w"/>
+                                    <constraint firstItem="p7R-BT-yQS" firstAttribute="top" secondItem="Cnp-YU-Teh" secondAttribute="topMargin" id="FrM-6I-K5R"/>
+                                    <constraint firstItem="0S4-Ug-90m" firstAttribute="bottom" secondItem="aYQ-tf-YP4" secondAttribute="bottom" id="LS8-75-9yN"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="p7R-BT-yQS" secondAttribute="trailing" id="Oaf-0M-Jf8"/>
+                                    <constraint firstItem="aYQ-tf-YP4" firstAttribute="bottom" secondItem="Cnp-YU-Teh" secondAttribute="bottomMargin" id="Rck-JI-ndd"/>
+                                    <constraint firstItem="aYQ-tf-YP4" firstAttribute="leading" secondItem="Cnp-YU-Teh" secondAttribute="leadingMargin" id="auF-HT-buV"/>
+                                    <constraint firstItem="0S4-Ug-90m" firstAttribute="trailing" secondItem="aYQ-tf-YP4" secondAttribute="trailing" id="uD4-eg-x7n"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="aYQ-tf-YP4" secondAttribute="trailing" id="vIz-xA-qNy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EEY-CL-OMw" secondAttribute="trailing" id="0xT-jv-syX"/>
+                            <constraint firstItem="EEY-CL-OMw" firstAttribute="top" secondItem="WMf-2j-WGI" secondAttribute="top" id="2n4-aE-zuU"/>
+                            <constraint firstAttribute="trailing" secondItem="Cnp-YU-Teh" secondAttribute="trailing" id="39E-o1-xtT"/>
+                            <constraint firstItem="OhH-yq-Ugr" firstAttribute="height" secondItem="WMf-2j-WGI" secondAttribute="height" multiplier="0.45" id="5Qc-0b-6pr"/>
+                            <constraint firstItem="EEY-CL-OMw" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leading" id="Av1-H2-sTJ"/>
+                            <constraint firstItem="OhH-yq-Ugr" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leadingMargin" id="HcB-Dr-S5G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OhH-yq-Ugr" secondAttribute="trailing" id="P6Q-5p-QYc"/>
+                            <constraint firstItem="Cnp-YU-Teh" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leading" id="gWK-gw-AKd"/>
+                            <constraint firstItem="Cnp-YU-Teh" firstAttribute="top" secondItem="OhH-yq-Ugr" secondAttribute="bottom" id="hYk-pb-v16"/>
+                            <constraint firstItem="OhH-yq-Ugr" firstAttribute="top" secondItem="WMf-2j-WGI" secondAttribute="top" id="iQ1-DL-Ecs"/>
+                            <constraint firstAttribute="bottom" secondItem="Cnp-YU-Teh" secondAttribute="bottom" id="xd6-Kj-oIA"/>
+                            <constraint firstItem="lJW-YY-c2x" firstAttribute="top" secondItem="EEY-CL-OMw" secondAttribute="bottom" id="yZq-ZR-aDy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXI-43-rpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="387"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="755" height="500"/>
+        <image name="chart" width="667" height="375"/>
         <image name="sun" width="500" height="500"/>
     </resources>
 </document>

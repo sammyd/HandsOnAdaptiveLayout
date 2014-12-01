@@ -13,6 +13,7 @@
 		22CBD32B1A2A0E8500A8459D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD32A1A2A0E8500A8459D /* Images.xcassets */; };
 		22CBD33A1A2A0E8500A8459D /* LocalWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBD3391A2A0E8500A8459D /* LocalWeatherTests.swift */; };
 		22CBD3441A2A115E00A8459D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD3431A2A115E00A8459D /* LaunchScreen.xib */; };
+		22CBD3B61A2D0D5900A8459D /* ClimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBD3B51A2D0D5900A8459D /* ClimateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		22CBD3381A2A0E8500A8459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CBD3391A2A0E8500A8459D /* LocalWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherTests.swift; sourceTree = "<group>"; };
 		22CBD3431A2A115E00A8459D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		22CBD3B51A2D0D5900A8459D /* ClimateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				22CBD3231A2A0E8500A8459D /* AppDelegate.swift */,
 				22CBD3251A2A0E8500A8459D /* ViewController.swift */,
+				22CBD3B51A2D0D5900A8459D /* ClimateViewController.swift */,
 				22CBD3271A2A0E8500A8459D /* Main.storyboard */,
 				22CBD32A1A2A0E8500A8459D /* Images.xcassets */,
 				22CBD3211A2A0E8500A8459D /* Supporting Files */,
@@ -214,6 +217,7 @@
 			files = (
 				22CBD3261A2A0E8500A8459D /* ViewController.swift in Sources */,
 				22CBD3241A2A0E8500A8459D /* AppDelegate.swift in Sources */,
+				22CBD3B61A2D0D5900A8459D /* ClimateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +403,7 @@
 				22CBD33F1A2A0E8500A8459D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22CBD3401A2A0E8500A8459D /* Build configuration list for PBXNativeTarget "LocalWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +412,7 @@
 				22CBD3421A2A0E8500A8459D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
