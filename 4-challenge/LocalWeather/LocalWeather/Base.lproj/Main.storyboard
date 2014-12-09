@@ -183,10 +183,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart" translatesAutoresizingMaskIntoConstraints="NO" id="OhH-yq-Ugr">
-                                <rect key="frame" x="16" y="0.0" width="568" height="270"/>
+                                <rect key="frame" x="16" y="8" width="568" height="270"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnp-YU-Teh" userLabel="ShadedView">
-                                <rect key="frame" x="0.0" y="270" width="600" height="330"/>
+                                <rect key="frame" x="0.0" y="278" width="600" height="322"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lake Saiko (西湖 Saiko)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-BT-yQS">
                                         <rect key="frame" x="8" y="8" width="584" height="35.5"/>
@@ -195,7 +195,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-tf-YP4">
-                                        <rect key="frame" x="8" y="51" width="584" height="270.5"/>
+                                        <rect key="frame" x="8" y="51" width="584" height="262.5"/>
                                         <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                         <string key="text">One of the Fuji Five Lakes and located in southern Yamanashi Prefecture near Mount Fuji, Japan.
 It is the fourth of the Fuji Five Lakes in terms of surface area, and second deepest, with a maximum water depth of 71.1 metres (233 ft).</string>
@@ -204,7 +204,7 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S4-Ug-90m">
-                                        <rect key="frame" x="511" y="280" width="81" height="42"/>
+                                        <rect key="frame" x="511" y="272" width="81" height="42"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
                                         <state key="normal" title="dismiss">
@@ -250,7 +250,9 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                             <constraint firstItem="lJW-YY-c2x" firstAttribute="top" secondItem="gr8-LM-iTU" secondAttribute="bottom" constant="20" id="gC0-3h-JTI"/>
                             <constraint firstItem="Cnp-YU-Teh" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leading" id="gWK-gw-AKd"/>
                             <constraint firstItem="Cnp-YU-Teh" firstAttribute="top" secondItem="OhH-yq-Ugr" secondAttribute="bottom" id="hYk-pb-v16"/>
-                            <constraint firstItem="OhH-yq-Ugr" firstAttribute="top" secondItem="WMf-2j-WGI" secondAttribute="top" id="iQ1-DL-Ecs"/>
+                            <constraint firstItem="OhH-yq-Ugr" firstAttribute="top" secondItem="WMf-2j-WGI" secondAttribute="top" constant="8" id="iQ1-DL-Ecs">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="gr8-LM-iTU" firstAttribute="top" secondItem="OhH-yq-Ugr" secondAttribute="bottom" constant="49" id="uOf-OW-1Da">
                                 <variation key="heightClass=compact" constant="8"/>
                             </constraint>
