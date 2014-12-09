@@ -33,8 +33,9 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="65"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="70"/>
+                                                <variation key="widthClass=regular" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="70"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="800" height="83"/>
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfl-kY-DdA">
@@ -42,8 +43,9 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
                                                 <color key="textColor" red="0.1507152641" green="0.35794979980000002" blue="0.53186782529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="170"/>
+                                                <variation key="widthClass=regular" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="170"/>
+                                                    <rect key="frame" x="0.0" y="83" width="800" height="201"/>
                                                 </variation>
                                             </label>
                                         </subviews>
@@ -56,6 +58,9 @@
                                             <constraint firstItem="hfl-kY-DdA" firstAttribute="top" secondItem="Snv-mm-sb1" secondAttribute="bottom" id="Yog-Ll-vgA"/>
                                             <constraint firstItem="hfl-kY-DdA" firstAttribute="leading" secondItem="Q23-vY-3QB" secondAttribute="leading" id="lJ5-Gf-aok"/>
                                         </constraints>
+                                        <variation key="widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="18" width="800" height="284"/>
+                                        </variation>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ev-vb-vZF">
                                         <rect key="frame" x="523" y="0.0" width="77" height="42"/>
