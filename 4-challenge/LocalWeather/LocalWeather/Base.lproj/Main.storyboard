@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -184,7 +185,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart" translatesAutoresizingMaskIntoConstraints="NO" id="OhH-yq-Ugr">
                                 <rect key="frame" x="16" y="0.0" width="568" height="270"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnp-YU-Teh">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnp-YU-Teh" userLabel="ShadedView">
                                 <rect key="frame" x="0.0" y="270" width="600" height="330"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lake Saiko (西湖 Saiko)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-BT-yQS">
@@ -243,14 +244,12 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                             <constraint firstItem="OhH-yq-Ugr" firstAttribute="height" secondItem="WMf-2j-WGI" secondAttribute="height" multiplier="0.5" id="DoR-Vw-2kW"/>
                             <constraint firstItem="OhH-yq-Ugr" firstAttribute="width" secondItem="WMf-2j-WGI" secondAttribute="width" multiplier="0.45" id="Gsy-Te-BZ9"/>
                             <constraint firstItem="OhH-yq-Ugr" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leadingMargin" id="HcB-Dr-S5G"/>
+                            <constraint firstItem="Cnp-YU-Teh" firstAttribute="top" secondItem="WMf-2j-WGI" secondAttribute="top" id="Kor-n5-hJ4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OhH-yq-Ugr" secondAttribute="trailing" id="P6Q-5p-QYc"/>
                             <constraint firstItem="gr8-LM-iTU" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leadingMargin" id="bUP-gU-OI6"/>
                             <constraint firstItem="lJW-YY-c2x" firstAttribute="top" secondItem="gr8-LM-iTU" secondAttribute="bottom" constant="20" id="gC0-3h-JTI"/>
                             <constraint firstItem="Cnp-YU-Teh" firstAttribute="leading" secondItem="WMf-2j-WGI" secondAttribute="leading" id="gWK-gw-AKd"/>
                             <constraint firstItem="Cnp-YU-Teh" firstAttribute="top" secondItem="OhH-yq-Ugr" secondAttribute="bottom" id="hYk-pb-v16"/>
-                            <constraint firstItem="Cnp-YU-Teh" firstAttribute="top" secondItem="vm7-FM-RJ1" secondAttribute="bottom" constant="355" id="iK4-Ny-RsH">
-                                <variation key="heightClass=compact" constant="8" symbolic="YES"/>
-                            </constraint>
                             <constraint firstItem="OhH-yq-Ugr" firstAttribute="top" secondItem="WMf-2j-WGI" secondAttribute="top" id="iQ1-DL-Ecs"/>
                             <constraint firstItem="gr8-LM-iTU" firstAttribute="top" secondItem="OhH-yq-Ugr" secondAttribute="bottom" constant="49" id="uOf-OW-1Da">
                                 <variation key="heightClass=compact" constant="8"/>
@@ -266,12 +265,12 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                                 <exclude reference="gr8-LM-iTU"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="bUP-gU-OI6"/>
-                                <exclude reference="uOf-OW-1Da"/>
                                 <exclude reference="1wm-6R-mCf"/>
                                 <exclude reference="DoR-Vw-2kW"/>
                                 <exclude reference="Gsy-Te-BZ9"/>
-                                <exclude reference="iK4-Ny-RsH"/>
+                                <exclude reference="bUP-gU-OI6"/>
+                                <exclude reference="uOf-OW-1Da"/>
+                                <exclude reference="Kor-n5-hJ4"/>
                                 <exclude reference="uiF-cJ-vR9"/>
                                 <exclude reference="gC0-3h-JTI"/>
                             </mask>
@@ -281,15 +280,15 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                                 <include reference="gr8-LM-iTU"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="bUP-gU-OI6"/>
-                                <include reference="uOf-OW-1Da"/>
                                 <include reference="1wm-6R-mCf"/>
-                                <include reference="DoR-Vw-2kW"/>
+                                <exclude reference="DoR-Vw-2kW"/>
                                 <include reference="Gsy-Te-BZ9"/>
                                 <exclude reference="P6Q-5p-QYc"/>
+                                <include reference="bUP-gU-OI6"/>
+                                <include reference="uOf-OW-1Da"/>
+                                <include reference="Kor-n5-hJ4"/>
                                 <exclude reference="gWK-gw-AKd"/>
                                 <exclude reference="hYk-pb-v16"/>
-                                <include reference="iK4-Ny-RsH"/>
                                 <include reference="uiF-cJ-vR9"/>
                                 <include reference="gC0-3h-JTI"/>
                             </mask>
