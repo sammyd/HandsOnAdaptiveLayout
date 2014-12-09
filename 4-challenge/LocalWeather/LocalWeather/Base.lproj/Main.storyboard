@@ -272,11 +272,11 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                                 <exclude reference="gr8-LM-iTU"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="bUP-gU-OI6"/>
+                                <exclude reference="uOf-OW-1Da"/>
                                 <exclude reference="1wm-6R-mCf"/>
                                 <exclude reference="DoR-Vw-2kW"/>
                                 <exclude reference="Gsy-Te-BZ9"/>
-                                <exclude reference="bUP-gU-OI6"/>
-                                <exclude reference="uOf-OW-1Da"/>
                                 <exclude reference="Kor-n5-hJ4"/>
                                 <exclude reference="uiF-cJ-vR9"/>
                                 <exclude reference="gC0-3h-JTI"/>
@@ -287,12 +287,12 @@ It is the fourth of the Fuji Five Lakes in terms of surface area, and second dee
                                 <include reference="gr8-LM-iTU"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="bUP-gU-OI6"/>
+                                <include reference="uOf-OW-1Da"/>
                                 <include reference="1wm-6R-mCf"/>
                                 <exclude reference="DoR-Vw-2kW"/>
                                 <include reference="Gsy-Te-BZ9"/>
                                 <exclude reference="P6Q-5p-QYc"/>
-                                <include reference="bUP-gU-OI6"/>
-                                <include reference="uOf-OW-1Da"/>
                                 <include reference="Kor-n5-hJ4"/>
                                 <exclude reference="gWK-gw-AKd"/>
                                 <exclude reference="hYk-pb-v16"/>
