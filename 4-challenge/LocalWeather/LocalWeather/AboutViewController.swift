@@ -22,7 +22,7 @@
 
 import UIKit
 
-class ClimateViewController: UIViewController {
+class AboutViewController : UIViewController {
 
   @IBAction func dismiss(sender: AnyObject) {
     presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
