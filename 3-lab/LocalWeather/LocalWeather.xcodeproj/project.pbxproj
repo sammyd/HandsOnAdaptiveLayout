@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2247EE3E1A7B9DEA007E9B2A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2247EE3D1A7B9DEA007E9B2A /* AboutViewController.swift */; };
 		22CBD3241A2A0E8500A8459D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBD3231A2A0E8500A8459D /* AppDelegate.swift */; };
 		22CBD3261A2A0E8500A8459D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBD3251A2A0E8500A8459D /* ViewController.swift */; };
 		22CBD3291A2A0E8500A8459D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CBD3271A2A0E8500A8459D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2247EE3D1A7B9DEA007E9B2A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		22CBD31E1A2A0E8500A8459D /* LocalWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CBD3221A2A0E8500A8459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CBD3231A2A0E8500A8459D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				22CBD3231A2A0E8500A8459D /* AppDelegate.swift */,
 				22CBD3251A2A0E8500A8459D /* ViewController.swift */,
 				22CBD3B51A2D0D5900A8459D /* ClimateViewController.swift */,
+				2247EE3D1A7B9DEA007E9B2A /* AboutViewController.swift */,
 				22CBD3271A2A0E8500A8459D /* Main.storyboard */,
 				22CBD32A1A2A0E8500A8459D /* Images.xcassets */,
 				22CBD3211A2A0E8500A8459D /* Supporting Files */,
@@ -217,6 +220,7 @@
 			files = (
 				22CBD3261A2A0E8500A8459D /* ViewController.swift in Sources */,
 				22CBD3241A2A0E8500A8459D /* AppDelegate.swift in Sources */,
+				2247EE3E1A7B9DEA007E9B2A /* AboutViewController.swift in Sources */,
 				22CBD3B61A2D0D5900A8459D /* ClimateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
