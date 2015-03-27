@@ -93,17 +93,45 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ptc-xK-Xri" secondAttribute="bottom" id="0of-PE-gKP"/>
+                            <constraint firstItem="Tj2-tI-u1h" firstAttribute="leading" secondItem="BTr-eJ-TUh" secondAttribute="trailing" constant="20" id="2Lm-x7-1yK"/>
                             <constraint firstAttribute="centerX" secondItem="BTr-eJ-TUh" secondAttribute="centerX" id="56X-9b-RxC"/>
+                            <constraint firstItem="Tj2-tI-u1h" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="7Yi-VN-6sN"/>
                             <constraint firstItem="Tj2-tI-u1h" firstAttribute="top" secondItem="BTr-eJ-TUh" secondAttribute="bottom" constant="20" id="AVC-q9-Z36"/>
                             <constraint firstItem="Ptc-xK-Xri" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lje-V6-DLS"/>
                             <constraint firstItem="Ptc-xK-Xri" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PZd-uf-Cgh"/>
                             <constraint firstAttribute="trailing" secondItem="Ptc-xK-Xri" secondAttribute="trailing" id="QV3-Un-F7R"/>
+                            <constraint firstItem="BTr-eJ-TUh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="SL6-n5-Szh"/>
+                            <constraint firstItem="Tj2-tI-u1h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XJf-rZ-pQL"/>
                             <constraint firstItem="BTr-eJ-TUh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aFu-5z-cYi"/>
                             <constraint firstItem="Tj2-tI-u1h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eN9-AB-eKn"/>
                             <constraint firstAttribute="trailing" secondItem="Tj2-tI-u1h" secondAttribute="trailing" id="izv-W7-hUI"/>
                             <constraint firstAttribute="bottom" secondItem="Tj2-tI-u1h" secondAttribute="bottom" id="p3Y-Ea-H9U"/>
+                            <constraint firstAttribute="centerY" secondItem="BTr-eJ-TUh" secondAttribute="centerY" id="r4M-Wb-asN"/>
                             <constraint firstItem="BTr-eJ-TUh" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="tnP-U6-Ld1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SL6-n5-Szh"/>
+                                <exclude reference="r4M-Wb-asN"/>
+                                <exclude reference="2Lm-x7-1yK"/>
+                                <exclude reference="7Yi-VN-6sN"/>
+                                <exclude reference="XJf-rZ-pQL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="56X-9b-RxC"/>
+                                <include reference="SL6-n5-Szh"/>
+                                <exclude reference="aFu-5z-cYi"/>
+                                <include reference="r4M-Wb-asN"/>
+                                <exclude reference="tnP-U6-Ld1"/>
+                                <include reference="2Lm-x7-1yK"/>
+                                <include reference="7Yi-VN-6sN"/>
+                                <exclude reference="AVC-q9-Z36"/>
+                                <include reference="XJf-rZ-pQL"/>
+                                <exclude reference="eN9-AB-eKn"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
