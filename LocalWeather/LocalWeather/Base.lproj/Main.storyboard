@@ -74,17 +74,50 @@
                                             <segue destination="0N3-E1-2i7" kind="presentation" id="oRz-ap-Wjl"/>
                                         </connections>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HUw-YH-fdJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Q23-vY-3QB" firstAttribute="leading" secondItem="Tj2-tI-u1h" secondAttribute="leading" id="21Q-JE-jsm"/>
-                                    <constraint firstAttribute="centerY" secondItem="Q23-vY-3QB" secondAttribute="centerY" id="2Bu-iY-HpA"/>
+                                    <constraint firstAttribute="centerY" secondItem="Q23-vY-3QB" secondAttribute="centerY" id="2Bu-iY-HpA">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                     <constraint firstItem="2ev-vb-vZF" firstAttribute="top" secondItem="Tj2-tI-u1h" secondAttribute="top" id="7vt-js-SUD"/>
                                     <constraint firstAttribute="trailing" secondItem="Q23-vY-3QB" secondAttribute="trailing" id="EyR-Nn-NEj"/>
+                                    <constraint firstAttribute="bottom" secondItem="HUw-YH-fdJ" secondAttribute="bottom" id="HFf-EC-N4w"/>
                                     <constraint firstAttribute="trailing" secondItem="2ev-vb-vZF" secondAttribute="trailing" id="OdE-yb-oCn"/>
+                                    <constraint firstAttribute="trailing" secondItem="HUw-YH-fdJ" secondAttribute="trailing" id="Vt9-8M-deW"/>
+                                    <constraint firstItem="HUw-YH-fdJ" firstAttribute="leading" secondItem="Tj2-tI-u1h" secondAttribute="leading" id="aSy-kz-GuP"/>
                                     <constraint firstItem="dnA-pJ-AMk" firstAttribute="leading" secondItem="Tj2-tI-u1h" secondAttribute="leading" id="iOr-MT-ma9"/>
                                     <constraint firstItem="dnA-pJ-AMk" firstAttribute="top" secondItem="Tj2-tI-u1h" secondAttribute="top" id="nEw-kW-cGw"/>
+                                    <constraint firstItem="HUw-YH-fdJ" firstAttribute="top" secondItem="Q23-vY-3QB" secondAttribute="bottom" constant="-2" id="xiI-LA-iUz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="HUw-YH-fdJ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="HFf-EC-N4w"/>
+                                        <exclude reference="Vt9-8M-deW"/>
+                                        <exclude reference="aSy-kz-GuP"/>
+                                        <exclude reference="xiI-LA-iUz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="HUw-YH-fdJ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="HFf-EC-N4w"/>
+                                        <include reference="Vt9-8M-deW"/>
+                                        <include reference="aSy-kz-GuP"/>
+                                        <include reference="xiI-LA-iUz"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="BTr-eJ-TUh">
                                 <rect key="frame" x="50" y="20" width="500" height="240"/>
@@ -133,6 +166,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="HUw-YH-fdJ" id="c7c-5M-KQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
