@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,28 +11,18 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rwdevcon-bg" translatesAutoresizingMaskIntoConstraints="NO" id="j9X-50-P3Y">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rwdevcon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="J1g-TT-kJ3">
-                    <rect key="frame" x="20" y="20" width="440" height="440"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="J1g-TT-kJ3" secondAttribute="height" multiplier="1:1" id="kC7-Yk-ZyS"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinobihead" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-dc-Zy7">
+                    <rect key="frame" x="8" y="8" width="464" height="464"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="J1g-TT-kJ3" secondAttribute="centerX" id="8Pi-up-XWb"/>
-                <constraint firstAttribute="trailing" secondItem="j9X-50-P3Y" secondAttribute="trailing" id="HgM-kP-B3E"/>
-                <constraint firstItem="J1g-TT-kJ3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="OXQ-Lo-9Zp"/>
-                <constraint firstItem="j9X-50-P3Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rql-Zb-OLy"/>
-                <constraint firstItem="J1g-TT-kJ3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="TLK-aW-Iux"/>
-                <constraint firstAttribute="centerY" secondItem="J1g-TT-kJ3" secondAttribute="centerY" id="TgA-8P-kET"/>
-                <constraint firstAttribute="bottom" secondItem="j9X-50-P3Y" secondAttribute="bottom" id="ZLR-l9-QzS"/>
-                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J1g-TT-kJ3" secondAttribute="trailing" constant="20" id="q8B-1e-6Af"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="J1g-TT-kJ3" secondAttribute="bottom" constant="20" id="vST-We-Xdy"/>
-                <constraint firstItem="j9X-50-P3Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yRR-Z8-UY8"/>
+                <constraint firstAttribute="trailingMargin" secondItem="dIR-dc-Zy7" secondAttribute="trailing" id="16X-Bp-JRv"/>
+                <constraint firstAttribute="bottomMargin" secondItem="dIR-dc-Zy7" secondAttribute="bottom" id="DSb-2d-bmt"/>
+                <constraint firstAttribute="centerX" secondItem="dIR-dc-Zy7" secondAttribute="centerX" id="OOr-qp-3Dq"/>
+                <constraint firstItem="dIR-dc-Zy7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="ReC-Y5-PHh"/>
+                <constraint firstAttribute="centerY" secondItem="dIR-dc-Zy7" secondAttribute="centerY" id="pfo-K5-c3K"/>
+                <constraint firstItem="dIR-dc-Zy7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="xSL-9f-j0l"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -40,7 +30,6 @@
         </view>
     </objects>
     <resources>
-        <image name="rwdevcon-bg" width="1104" height="1104"/>
-        <image name="rwdevcon-logo" width="552" height="552"/>
+        <image name="shinobihead" width="631" height="500"/>
     </resources>
 </document>
